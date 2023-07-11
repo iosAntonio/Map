@@ -1,0 +1,14 @@
+.app{
+  background: cadetblue;
+  padding: 30px;
+  height:100vh; 
+}
+.todo{
+  background: rebeccapurple;
+  box-shadow: 2px 2px 2px gold;
+  border-radius: 6px;
+  padding: 20px 10px;
+  font-size: 15px;
+  
+  max-width: 500px;
+}

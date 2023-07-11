@@ -12,10 +12,10 @@ useEffect (() =>{
 new MapView({
     container: mapRef.current,
     map: new Map({
-        basemap:"dark-gray-vector",
+        basemap:"streets",
     }),
     center: [12.4963655, 41.9027835], // longitudine,latitudine
-    zoom: 4,
+    zoom: 6,
 }).when((view) => setView(view))
 }, []);
 

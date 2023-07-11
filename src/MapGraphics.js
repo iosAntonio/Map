@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import {useEffect} from "react";
 
 import Graphic from "@arcgis/core/Graphic";
 
@@ -13,25 +13,17 @@ const MapGraphics = ({view}) => {
         symbol:{
             type:"simple-marker",
             color:[226, 119, 40],
-            size: 5
-    },
-//     geometry:{
-//         type:"point",
-//         longitude:7.6868565, 
-//         latitude: 45.070312
-// },
-//    symbol:{
-//     type:"simple-marker",
-//     color:[226, 119, 40],
-//     size: 5
-// }
-
-           
+            size: 5,
+            outline: {
+                color: [255, 255, 255], // White
+                width: 1
+            }
+    }  
         });
-
+    
         view.graphics.add(graph)
       
-        }, []);
+        }, [view.graphics]);
             
         
 

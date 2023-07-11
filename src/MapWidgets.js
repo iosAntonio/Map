@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Home from "@arcgis/core/widgets/Home";
 import ScaleBar from "@arcgis/core/widgets/ScaleBar";
 
@@ -17,7 +17,7 @@ const MapWidgets = ({ view }) => {
       }),
       "bottom-left"
     );
-  }, []);
+  }, [view]);
 
   return null;
 };

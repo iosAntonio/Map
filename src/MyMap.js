@@ -22,7 +22,8 @@ useEffect (() =>{
 new MapView({
     container: mapRef.current,
     map: new Map({
-        // basemap:"streets", realistica
+        // basemap:"streets",
+        // basemap:"satellite",
         basemap:"dark-gray-vector",
         layers: [glResult1, glResult2],
     }),
@@ -32,7 +33,7 @@ new MapView({
 }).when((view) => setView(view))
 }, []);
 
-    return <div ref={mapRef} style={{height: "100vh", width:"100%"}}>
+    return <div ref={mapRef} style={{height: "50vh", width:"100vh", position:'absolute', right: '50px'}}>
         {view && (
             <>
         <MapWidgets view={view}/>

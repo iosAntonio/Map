@@ -1,15 +1,28 @@
 import React from 'react';
+import styled from 'styled-components';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import MyMap from './MyMap';
 
+
+const Wrapper = styled.section`
+border-radius: 16px;
+display:flex;
+align-items:center
+padding:100px;
+height: 200px
+margin-right: 20px;
+margin-left:20px;
+margin-top:50px;
+background: papayawhip;
+`;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MyMap>
-      
-    </MyMap>
+   <Wrapper>
+    <MyMap/>
+   </Wrapper>
   </React.StrictMode>
 );
 

@@ -13,15 +13,15 @@ const MapGraphics = ({view}) => {
     
       let locations = [     {
         longitude:7.666065, 
-        latitude: 45.097283
+        latitude: 42.097283
     },
     {
-        longitude:7.635756, 
+        longitude:8.635756, 
         latitude: 45.083461
     },
     {
         longitude:7.677794, 
-        latitude: 45.101055
+        latitude: 44.101055
     },
     {
         longitude:12.98114309, 
